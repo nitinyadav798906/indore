@@ -1,10 +1,12 @@
-FROM python:3.12.3
-WORKDIR /app
-COPY . .
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
-    && rm -rf /var/lib/apt/lists/*
-RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir -r requirements.txt
+FROM python:3.12-slim
 
-CMD gunicorn app:app & python3 utk_advanced.py
+WORKDIR /app
+
+COPY requirements.txt .
+
+RUN python -m pip install --no-cache-dir --upgrade pip && \
+    python -m pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+CMD ["python", "utk_advanced.py"]
