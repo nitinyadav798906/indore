@@ -1,0 +1,130 @@
+# 🔐 SECURITY - Never commit these files
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+config_local.py
+secrets.txt
+credentials.json
+
+# API Keys & Tokens
+BOT_TOKEN
+API_KEY
+API_SECRET
+access_token.txt
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+utkarsh_users.db
+utkarsh_users.db.backup
+
+# Logs & Temp Files
+*.log
+bot.log
+debug.log
+nohup.out
+*.tmp
+*.temp
+
+# User Data
+videos_*.txt
+downloads/
+extracted/
+results/
+cache/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+.nose*
+.hypothesis/
+
+# Backup Files
+*.bak
+*.backup
+*~
+.#*
+
+# OS
+Thumbs.db
+.DS_Store
+*.DS_Store
+*.swp
+*.swo
+
+# Virtual Environments
+.venv
+.virtualenv
+env.bak
+venv.bak
+
+# IDE Configuration (but commit examples)
+.vscode/*
+!.vscode/settings.example.json
+
+# Credentials in any form
+auth/
+token/
+keys/
+secrets/
+
+# Session Files
+*.session
+session.txt
+ci_session*
+
+# Build Artifacts
+dist/
+build/
+*.egg-info/
+
+# Misc
+.cache/
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
